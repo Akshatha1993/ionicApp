@@ -1,0 +1,23 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-button slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-button>
+      <ion-title style="text-align:center">
+       Dashboard
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-card>
+      <ion-card-content>
+        Hello World, this is my camera app
+  
+        <button (click)="openCamera()">Take a Picture</button>
+  
+        Latest Picture:
+        <img [src]="base64Image" *ngIf="base64Image" />
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+  
